@@ -1,0 +1,28 @@
+Problem Statement –
+
+You have write a function that accepts, a string which length is “len”, the string has some “#”, in it you have to move all the hashes to the front of the string and return the whole string back and print it.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    string s,hash_s;
+    cout<<"Enter the string";
+    cin>>s;
+    int j=0,i=0,count=0;
+   for(int i=0;i<s.size();i++){
+       if(s[i]=='#')
+       {s.erase(s.begin()+i);
+       count++;
+   i--;}
+}
+for(int i=0;i<count;i++){
+hash_s+="#";
+}
+s=hash_s+s;
+cout<<s;
+    return 0;
+}
