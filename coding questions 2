@@ -1,0 +1,34 @@
+Problem Statement –
+
+Capgemini in its online written test have a coding question, wherein the students are given a string with multiple characters that are repeated consecutively. You’re supposed to reduce the size of this string using mathematical logic given as in the example below 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    cout<<"Enter the string";
+    cin>>s;
+    string new_string;
+    int c=1;
+   for(int i=0;i<s.size()-1;i++)
+       {  if(s[i]==s[i+1])
+           c++;
+           else
+           {
+               new_string+=s[i];
+               int j=c;
+               if(j!=1)
+               new_string+=to_string(j);
+               c=1;
+           }
+           
+       }
+       new_string+=s[s.size()-1];
+        if(c!=1)
+       new_string+=to_string(c);
+   cout<<new_string;
+    return 0;
+}
