@@ -1,0 +1,18 @@
+Problem Statement –
+
+A function is there which tells how many dealerships there are and the total number of cars in each dealership.
+Your job is to calculate how many tyres would be there in each dealership
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{ int cars,bikes;//We can also make a separate function for it
+   cout<<"enter the values ";
+   cin>>cars>>bikes;
+   int result=(cars*4)+(2*bikes);
+   cout<<"result is"<<result;
+    
+    return 0;
+}
